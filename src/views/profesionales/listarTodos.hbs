@@ -1,0 +1,13 @@
+{{> header title="Página de Equipo"}}
+    <strong>{{msg}}</strong>
+    <br>
+    <ul>
+        {{#each data}}
+        <li><b>ID {{this.identificador}}</b>: {{this.nombre}} - {{this.especialidad}}</li>
+        {{else}}
+        <li>No hay datos</li>
+        {{/each}}
+    </ul>
+    <a href="/">Volver al inicio</a>
+
+{{> footer year=2021}}
